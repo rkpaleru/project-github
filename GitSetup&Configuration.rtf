@@ -53,29 +53,6 @@ fatal: not a git repository (or any of the parent directories): .git\
  create mode 100644 Git Setup & Configutaion.rtf\
 \
 \
-\'97 (base) RKMacBookPro:HelloWorld rkpaleru$ git init code \
-\'97 Initialized empty Git repository in /Users/rkpaleru/HelloWorld/code/.git/\
-\'97 (base) RKMacBookPro:HelloWorld rkpaleru$ \
-\
-- (base) RKMacBookPro:code rkpaleru$ pwd\
-- /Users/rkpaleru/HelloWorld/code\
-- (base) RKMacBookPro:code rkpaleru$ git add HelloWorld.py\
-- (base) RKMacBookPro:code rkpaleru$ \
-\
-\
-- (base) RKMacBookPro:code rkpaleru$ git commit HelloWorld.py\
-- [master (root-commit) cec480c] My first comment (COMMENT ADDED BY RK)\
--  1 file changed, 3 insertions(+)\
-- create mode 100755 HelloWorld.py\
-(base) RKMacBookPro:code rkpaleru$ \
-\
-- (base) RKMacBookPro:code rkpaleru$ git status\
-- On branch master\
-- nothing to commit, working tree clean\
-- (base) RKMacBookPro:code rkpaleru$ \
-\
-\
-\
 \pard\pardeftab720\sl600\sa320\partightenfactor0
 
 \f1\b\fs48 \cf3 \cb4 \expnd0\expndtw0\kerning0
@@ -234,25 +211,71 @@ Changes to be committed:\
 	\cf6 modified:   GitSetup&Configuration.rtf\cf2 \
 	\cf6 new file:   HelloWorld.py\cf2 \
 \
+// Commit Changes\
+(base) rkpaleru@RKMacBookPro project-github % git commit \
+[master 04ce28f] All Changes being Committed\
+ 2 files changed, 54 insertions(+)\
+ create mode 100755 HelloWorld.py\
+(base) rkpaleru@RKMacBookPro project-github % \
 \
 \
 \
 \
-(base) RKMacBookPro:code rkpaleru$ git remote add origin https://github.com/rkpaleru/code.git\
-(base) RKMacBookPro:code rkpaleru$ git push -u origin master\
-remote: Invalid username or password.\
-fatal: Authentication failed for 'https://github.com/rkpaleru/code.git/'\
-(base) RKMacBookPro:code rkpaleru$ git push -u origin master\
-Username for 'https://github.com': rkpaleru\
-Password for 'https://rkpaleru@github.com': \
-Enumerating objects: 3, done.\
-Counting objects: 100% (3/3), done.\
-Writing objects: 100% (3/3), 276 bytes | 138.00 KiB/s, done.\
+// push to Github Repository \
+(base) rkpaleru@RKMacBookPro project-github % git push -u origin master\
+Enumerating objects: 4, done.\
+Counting objects: 100% (4/4), done.\
+Delta compression using up to 4 threads\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 2.83 KiB | 2.83 MiB/s, done.\
 Total 3 (delta 0), reused 0 (delta 0)\
-To https://github.com/rkpaleru/code.git\
- * [new branch]      master -> master\
+To https://github.com/rkpaleru/project-github.git\
+   8bf2136..d2f6082  master -> master\
 Branch 'master' set up to track remote branch 'master' from 'origin'.\
+(base) rkpaleru@RKMacBookPro project-github % \
+\
+\
+===============================================================================================\
+ANOTHER EXAMPLE \
+\
+\'97 (base) RKMacBookPro:HelloWorld rkpaleru$ git init code \
+\'97 Initialized empty Git repository in /Users/rkpaleru/HelloWorld/code/.git/\
+\'97 (base) RKMacBookPro:HelloWorld rkpaleru$ \
+\
+- (base) RKMacBookPro:code rkpaleru$ pwd\
+- /Users/rkpaleru/HelloWorld/code\
+- (base) RKMacBookPro:code rkpaleru$ git add HelloWorld.py\
+- (base) RKMacBookPro:code rkpaleru$ \
+\
+\
+- (base) RKMacBookPro:code rkpaleru$ git commit HelloWorld.py\
+- [master (root-commit) cec480c] My first comment (COMMENT ADDED BY RK)\
+-  1 file changed, 3 insertions(+)\
+- create mode 100755 HelloWorld.py\
 (base) RKMacBookPro:code rkpaleru$ \
+\
+- (base) RKMacBookPro:code rkpaleru$ git status\
+- On branch master\
+- nothing to commit, working tree clean\
+- (base) RKMacBookPro:code rkpaleru$ \
+\
+\
+- (base) RKMacBookPro:code rkpaleru$ git remote add origin https://github.com/rkpaleru/code.git\
+- (base) RKMacBookPro:code rkpaleru$ git push -u origin master\
+- remote: Invalid username or password.\
+- fatal: Authentication failed for 'https://github.com/rkpaleru/code.git/'\
+- (base) RKMacBookPro:code rkpaleru$ git push -u origin master\
+- Username for 'https://github.com': rkpaleru\
+- Password for 'https://rkpaleru@github.com': \
+- Enumerating objects: 3, done.\
+- Counting objects: 100% (3/3), done.\
+- Writing objects: 100% (3/3), 276 bytes | 138.00 KiB/s, done.\
+- Total 3 (delta 0), reused 0 (delta 0)\
+- To https://github.com/rkpaleru/code.git\
+- * [new branch]      master -> master\
+- Branch 'master' set up to track remote branch 'master' from 'origin'.\
+- (base) RKMacBookPro:code rkpaleru$ \
+\
 \
 \
 \
