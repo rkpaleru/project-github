@@ -222,18 +222,34 @@ Changes to be committed:\
 \
 \
 // push to Github Repository \
-(base) rkpaleru@RKMacBookPro project-github % git push -u origin master
-Enumerating objects: 9, done.
-Counting objects: 100% (9/9), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (6/6), done.
-Writing objects: 100% (7/7), 1.55 KiB | 1.55 MiB/s, done.
-Total 7 (delta 2), reused 0 (delta 0)
-remote: Resolving deltas: 100% (2/2), completed with 1 local object.
-To https://github.com/rkpaleru/project-github.git
-   d2f6082..b562aaa  master -> master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-(base) rkpaleru@RKMacBookPro project-github % 
+(base) rkpaleru@RKMacBookPro project-github % git push -u origin master\
+Enumerating objects: 4, done.\
+Counting objects: 100% (4/4), done.\
+Delta compression using up to 4 threads\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 2.83 KiB | 2.83 MiB/s, done.\
+Total 3 (delta 0), reused 0 (delta 0)\
+To https://github.com/rkpaleru/project-github.git\
+   8bf2136..d2f6082  master -> master\
+Branch 'master' set up to track remote branch 'master' from 'origin'.\
+(base) rkpaleru@RKMacBookPro project-github % \
+\
+// Make changes in Github UI and commit changes (including adding a README.md file\
+// Execute a git pull command and see if the repo is pulled in. \
+(base) rkpaleru@RKMacBookPro project-github % git pull  \
+Updating b562aaa..4bbd515\
+Fast-forward\
+ GitSetup&Configuration.rtf | 25 \cf6 +++++++++++++\cf5 ------------\cf2 \
+ README.md                  |  5 \cf6 +++++\cf2 \
+ 2 files changed, 18 insertions(+), 12 deletions(-)\
+ create mode 100644 README.md\
+(base) rkpaleru@RKMacBookPro project-github % ls -l\
+total 48\
+-rw-r--r--  1 rkpaleru  staff  12963 Nov 29 18:29 GitSetup&Configuration.rtf\
+-rwxr-xr-x  1 rkpaleru  staff     35 Nov 28 18:17 HelloWorld.py\
+-rw-r--r--  1 rkpaleru  staff    258 Nov 29 18:29 README.md\
+(base) rkpaleru@RKMacBookPro project-github % ls -l\
+\
 \
 \
 ===============================================================================================\
