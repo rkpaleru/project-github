@@ -183,6 +183,57 @@ To https://github.com/rkpaleru/project-github.git\
 Branch 'master' set up to track remote branch 'master' from 'origin'.\
 (base) rkpaleru@RKMacBookPro project-github % \
 \
+//Made some changes locally (typed this text and saved)\
+//Also created a new file with the name \'93HelloWorld.py\'94\
+(base) rkpaleru@RKMacBookPro project-github % git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf5 modified:   GitSetup&Configuration.rtf\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf5 HelloWorld.py\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a") \
+// You see new file added (UNTRACKED) and modification to existing file (NOT STAGED for COMMIT)\
+\
+\
+// Now run the \'93add\'94 for HelloWorld.py \
+(base) rkpaleru@RKMacBookPro project-github % git add 'HelloWorld.py'\
+(base) rkpaleru@RKMacBookPro project-github % git status             \
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf6 new file:   HelloWorld.py\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf5 modified:   GitSetup&Configuration.rtf\cf2 \
+\
+// You see new file added (STAGED FOR COMMIT) and modification to existing file (NOT STAGED for COMMIT)\
+\
+// Now add modified file and everything is (STAGED FOR COMMIT)\
+\
+(base) rkpaleru@RKMacBookPro project-github % git add 'GitSetup&Configuration.rtf'\
+(base) rkpaleru@RKMacBookPro project-github % git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf6 modified:   GitSetup&Configuration.rtf\cf2 \
+	\cf6 new file:   HelloWorld.py\cf2 \
+\
 \
 \
 \
