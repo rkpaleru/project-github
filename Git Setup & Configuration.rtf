@@ -117,6 +117,59 @@ Changes not staged for commit:\
   (use "git restore <file>..." to discard changes in working directory)\
 	\cf5 deleted:    Git Setup & Configutaion.rtf\cf2 \
 \
+// Changed names and added and removed etc. prior to commit and chekked status \
+(base) RKMacBookPro:project-github rkpaleru$ git status\
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf6 new file:   Git Setup & Configuration.rtf\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add/rm <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf5 deleted:    Git Setup & Configutaion.rtf\cf2 \
+\
+(base) RKMacBookPro:project-github rkpaleru$ git add 'Git Setup & Configuration.rtf'\
+(base) RKMacBookPro:project-github rkpaleru$ git status\
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf6 new file:   Git Setup & Configuration.rtf\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add/rm <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf5 deleted:    Git Setup & Configutaion.rtf\cf2 \
+\
+(base) RKMacBookPro:project-github rkpaleru$ git rm 'Git Setup & Configutaion.rtf'\
+rm 'Git Setup & Configutaion.rtf'\
+(base) RKMacBookPro:project-github rkpaleru$ git status \
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf6 renamed:    Git Setup & Configutaion.rtf -> Git Setup & Configuration.rtf\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf5 modified:   Git Setup & Configuration.rtf\cf2 \
+\
+(base) RKMacBookPro:project-github rkpaleru$ git add 'Git Setup & Configuration.rtf'\
+(base) RKMacBookPro:project-github rkpaleru$ git status \
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf6 renamed:    Git Setup & Configutaion.rtf -> Git Setup & Configuration.rtf\cf2 \
+\
+\
+//Commit the file \
+(base) RKMacBookPro:project-github rkpaleru$ git commit \
+[master e9df336] Modified the file renamed it to correct typo in fine name\
+ 1 file changed, 48 insertions(+), 11 deletions(-)\
+ rename Git Setup & Configutaion.rtf => Git Setup & Configuration.rtf (71%)\
+(base) RKMacBookPro:project-github rkpaleru$ \
+\
+//\
 \
 \
 \
